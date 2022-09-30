@@ -1,0 +1,53 @@
+.heading-primary {
+  width: 100%;
+  text-align: center;
+  font-size: 250%;
+  letter-spacing: 10px;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  transition: all 0.5s linear;
+}
+
+.heading-primary > h2 > span {
+  color: rgb(255, 255, 255);
+}
+
+.btn-arrow {
+  width: 72px;
+  height: 72px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.btn-arrow > div {
+  width: 100px;
+  height: 10px;
+  position: absolute;
+  top: 50%;
+  transition: all 0.1s linear;
+}
+
+.btn-arrow > div:nth-child(1) {
+  transform: rotate(45deg);
+}
+
+.btn-arrow > div:nth-child(2) {
+  transform: rotate(-45deg);
+}
+
+.btn-arrow > div > div {
+  width: 55px;
+  height: 10px;
+  background-color: rgb(14, 160, 179);
+  border-radius: 5px;
+}
+
+.btn-arrow:active > div:nth-child(1) {
+  transform: rotate(30deg);
+}
+
+.btn-arrow:active > div:nth-child(2) {
+  transform: rotate(-30deg);
+}
