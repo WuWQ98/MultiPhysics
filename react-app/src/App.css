@@ -5,4 +5,5 @@
   position: relative;
   height: 100vh;
   width: 100%;
+  cursor: url("./image/cursor/正常选择.cur"), default;
 }

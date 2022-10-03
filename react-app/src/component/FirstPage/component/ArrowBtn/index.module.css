@@ -1,0 +1,41 @@
+.btn-arrow {
+  width: 72px;
+  height: 72px;
+  position: relative;
+  margin: 0 auto;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.btn-arrow > div {
+  width: 100px;
+  height: 10px;
+  position: absolute;
+  top: 50%;
+  transition: all 0.1s linear;
+}
+
+.btn-arrow > div:nth-child(1) {
+  transform: rotate(45deg);
+}
+
+.btn-arrow > div:nth-child(2) {
+  transform: rotate(-45deg);
+}
+
+.btn-arrow > div > div {
+  width: 55px;
+  height: 10px;
+  background-color: rgb(14, 160, 179);
+  border-radius: 5px;
+}
+
+.btn-arrow:active > div:nth-child(1) {
+  transform: rotate(30deg);
+}
+
+.btn-arrow:active > div:nth-child(2) {
+  transform: rotate(-30deg);
+}

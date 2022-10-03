@@ -1,5 +1,6 @@
 import React from "react";
 import Title from "./component/Title";
+import ArrowBtn from "./component/ArrowBtn";
 import componentStyle from "./index.module.css";
 
 export default class FirstPage extends React.Component {
@@ -10,6 +11,11 @@ export default class FirstPage extends React.Component {
   render() {
     return (
       <div className={componentStyle.container}>
+        {/* <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div> */}
         <Title showNext={this.state.showNext} goAhead={this.goAhead} />
       </div>
     );
