@@ -1,13 +1,8 @@
 import React from "react";
-import Title from "./component/Title";
-import ArrowBtn from "./component/ArrowBtn";
+import MainModules from "./component/MainModules";
 import componentStyle from "./index.module.css";
 
 export default class FirstPage extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = { showNext: false };
-  }
   render() {
     return (
       <div className={componentStyle.container}>
@@ -16,12 +11,13 @@ export default class FirstPage extends React.Component {
         <div></div>
         <div></div>
         <div></div> */}
-        <Title showNext={this.state.showNext} goAhead={this.goAhead} />
+        <div
+          className={componentStyle["module-container"]}
+          style={{ visibility: this.props.showNext ? "visible" : "hidden" }}
+        >
+          <MainModules />
+        </div>
       </div>
     );
   }
-
-  goAhead = () => {
-    this.setState({ showNext: true });
-  };
 }

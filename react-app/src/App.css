@@ -7,3 +7,55 @@
   width: 100%;
   cursor: url("./image/cursor/正常选择.cur"), default;
 }
+
+.heading-primary {
+  width: 100%;
+  text-align: center;
+  font-size: 250%;
+  letter-spacing: 10px;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  transition: all 0.5s linear;
+  caret-color: rgba(0, 0, 0, 0);
+  z-index: 100;
+}
+
+.heading-primary:hover {
+  cursor: url("./image/cursor/候选.cur"), default;
+}
+
+.firstPage {
+  width: 98%;
+  height: 96%;
+  position: absolute;
+  top: 2%;
+  left: 1%;
+  background-image: linear-gradient(
+      to bottom right,
+      rgba(1, 149, 235, 0.5),
+      rgba(62, 221, 226, 0.5)
+    ),
+    url("./image/background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 80% 100%, 0 100%);
+  /* visibility: hidden; */
+}
+
+.clearBtn {
+  width: 98%;
+  height: 96%;
+  position: absolute;
+  top: 2%;
+  left: 1%;
+  background-color: rgba(0, 225, 255, 0.6);
+  clip-path: polygon(82% 100%, 100% 82%, 100% 100%);
+  transition: all 0.5s linear;
+}
+
+.clearBtn:hover {
+  clip-path: polygon(81% 100%, 100% 81%, 100% 100%);
+}
